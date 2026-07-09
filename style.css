@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    background-color: white;
+}
+
+.container{
+     max-width: 1000px;
+    margin: auto;
+}
+
+.navbar{
+    padding:20px;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    
+    
+}
+ul,li,a{
+    color: #575757;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+.button{
+    color: white;
+    background-color: #1D4ED8;
+    margin-left: 190px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+}
