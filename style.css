@@ -9,6 +9,8 @@ body {
     margin: 0px 60px 0px 60px;
 }
 
+
+/* navbar section */
 .navbar {
     padding: 20px;
     display: grid;
@@ -76,6 +78,8 @@ header {
     margin-top: 250px;
 }
 
+
+/* speakers section */
 .speakers-heading {
     font-size: 2rem;
     align-items: center;
@@ -114,6 +118,7 @@ header {
 .speakers-parent div h4 {
     margin: 8px 0px 8px 0px;
 }
+
 
 /* start of pricing section */
 .pricing-card-head {
@@ -223,18 +228,27 @@ header {
 }
 /* end of pricing section */
 
+
 /* footer section */
 footer{
      background-color:#0D1B2A;
+     color: #575757;
+     margin-bottom: 0px;  
 }
 .footer{
    display: flex;
-   justify-content: space-between;
-  
-}
-.left-footer{
-    
+   justify-content: space-between; 
 }
 .right-footer{
   margin: 20px;
 }
+.fa-brands{
+    color: #FFFFFF;
+    font-size: 40px;
+}
+.right-footer a{
+    text-decoration: none;
+    color: #575757;
+}
+/* footer section end */
+
