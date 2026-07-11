@@ -6,99 +6,235 @@ body {
 }
 
 .container {
-     margin: 0px 60px 0px 60px;
+    margin: 0px 60px 0px 60px;
 }
 
 .navbar {
     padding: 20px;
-    /* border: 2px solid black; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto 1fr auto;
     align-items: center;
 
 
 }
 
-ul,
-li,
-a {
-    color: #575757;
+.menu {
     display: flex;
+    justify-content: center;
     gap: 10px;
+}
+
+.menu a {
+    color: #575757;
     list-style: none;
     text-decoration: none;
 }
 
 .button {
+    display: inline-block;
     color: white;
     background-color: #1D4ED8;
-    margin-left: 190px;
     padding: 10px 30px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
 
-header{
+header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/banner.jpg');
     height: 70vh;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: grid;
     justify-content: center;
     align-items: center;
 }
-.header-content{
+
+.header-content {
     color: white;
     text-align: center;
     align-items: center;
     font-size: 1rem;
-      
+
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 60px;
     margin-bottom: 10px;
 }
-.button-2{
-     color: white;
+
+.button-2 {
+    color: white;
     background-color: #1D4ED8;
     padding: 10px 30px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    display:flex;
+    display: flex;
     margin: auto;
     margin-top: 250px;
 }
-.speakers-heading{
+
+.speakers-heading {
     font-size: 2rem;
     align-items: center;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 56px;
 }
-.speakers-parent{
+
+.speakers-parent {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     margin-bottom: 80px;
 }
-.speakers-parent div img{
-    border-radius: 10px 10px 10px 0px;
+
+.speakers-parent div img {
+    border-radius: 10px 10px 0px 0px;
     width: 100%;
-   
+
 }
-.job{
+
+.job {
     font-size: 12px;
     color: #2563EB;
 }
-.position{
+
+.position {
     font-size: 14px;
 }
-.job,.position{
-   margin: 2px;
+
+.job,
+.position {
+    margin: 2px;
 }
-.speakers-parent div h4{
-    margin: 0px;
+
+.speakers-parent div h4 {
+    margin: 8px 0px 8px 0px;
+}
+
+/* start of pricing section */
+.pricing-card-head {
+    font-size: 48px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.pricing-card-p {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.pricing-card-parant {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 48px;
+
+}
+
+.all-card {
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.all-card ul {
+
+    font-size: 14px;
+    padding-left: 20px;
+    margin-right: 20px;
+    color: #333333;
+}
+
+.all-card li::marker {
+    color: #2563EB
+}
+
+.all-card ul li {
+    padding: 5px
+}
+
+.card-p-tag {
+    font-size: 14px;
+    color: #888888;
+}
+
+.price {
+    font-size: 44px;
+    margin: 4px 0px 4px 0px;
+    font-weight: 500;
+}
+
+
+.first-card {
+    background-color: #FFFFFF;
+}
+
+.first-card button {
+    color: #2563EB;
+    border: 2px solid #2563EB;
+    background-color: white;
+    padding: 10px 100px 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+
+
+.middle-card {
+    color: #FFFFFF;
+    background-color: #0D1B2A;
+}
+
+.middle-card li {
+    color: #888585
+}
+
+.middle-card button {
+    color: white;
+    background-color: #1D4ED8;
+    padding: 10px 100px 10px 100px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+
+.middle-card p:first-child {
+    color: #93C5FD;
+}
+
+.third-card button {
+    color: #0D1B2A;
+    border: 2px solid #0D1B2A;
+    background-color: white;
+    padding: 10px 100px 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+/* end of pricing section */
+
+/* footer section */
+footer{
+     background-color:#0D1B2A;
+}
+.footer{
+   display: flex;
+   justify-content: space-between;
+  
+}
+.left-footer{
+    
+}
+.right-footer{
+  margin: 20px;
 }
