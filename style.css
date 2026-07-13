@@ -277,6 +277,8 @@ footer {
 
 .all-schedule p:first-child {
     color: #93C5FD;
+    padding-bottom: 20px;
+     border-bottom: 2px solid #0D1B2A;
 }
 
 .all-schedule article {
